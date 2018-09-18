@@ -5,7 +5,10 @@ class PhonesController < ApplicationController
   # GET /phones
   # GET /phones.json
   def index
-    @phones = Phone.all.order(:phone).page(params[:page]).per(15)
+    respond_to do |format|
+      format.html {  @phones = Phone.all.order(:phone).page(params[:page]).per(15) }
+      format.js
+    end
   end
 
   # GET /phones/1
