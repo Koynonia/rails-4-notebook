@@ -1,0 +1,33 @@
+'pt-BR':
+  activerecord:
+    models:
+      contact:
+        one: Contato
+        other: Contatos
+      address:
+        one: Endereço
+        other: Endereços
+      phone:
+        one: Telefone
+        other: Telefones
+      kind:
+        one: Tipo
+        other: Tipos
+    attributes:
+      contact:
+        name: Nome
+        email: E-mail
+        kind: Tipo
+        kind_id: Tipo
+        rmk: Observação
+      address:
+        street: Logradouro
+        city: Cidade
+        state: Estado
+        contact_id: Contato
+      phone:
+        phone: Telefone
+        contact_id: Contato
+      kind:
+        kind: Tipo
+        description: Descrição

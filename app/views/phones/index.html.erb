@@ -1,0 +1,34 @@
+<div class="dark-matter">
+  <p id="notice"><%= notice %></p>
+
+  <h1><%= "#{t('title.listing')} #{@phones.model.model_name.human(count: @phones.count)}" %></h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th><%= @phones.model.human_attribute_name("contact_id") %></th>
+        <th><%= @phones.model.human_attribute_name("phone") %></th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @phones.each do |phone| %>
+        <tr style="background: <%= cycle('#606060','#686868') %>">
+          <td class="action"><%= phone.contact.name %></td>
+          <td><%= phone.phone %></td>
+          <td class="action"><%= link_to t('buttons.show'), phone %></td>
+          <td class="action"><%= link_to t('buttons.edit'), edit_phone_path(phone) %></td>
+          <td class="action"><%= link_to t('buttons.destroy'), phone, method: :delete, data: { confirm: t('message.confirm') } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <div class="page"><%= paginate @phones %></div>
+  <br>
+  <div class="actions">
+      <%= link_to "#{t('buttons.new')} #{@phones.model.model_name.human(count: 1)}", new_phone_path, class: 'button' %>
+      <%= link_to t('buttons.back'), home_index_path, class: 'button' %>
+  </div>
+</div>

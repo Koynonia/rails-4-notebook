@@ -1,0 +1,23 @@
+<%= form_for(@kind) do |f| %>
+  <% if @kind.errors.any? %>
+    <div id="error_explanation">
+       <h2><%= "#{@kind.errors.count} #{t('message.error')} #{t('message.error_msg')}:" %></h2>
+
+      <ul>
+      <% @kind.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= f.submit t('buttons.save'), class: 'button' %>&nbsp;&nbsp;&nbsp;
+    <%= link_to t('buttons.back'), kinds_path, class: 'button' %>
+  </div>
+<% end %>

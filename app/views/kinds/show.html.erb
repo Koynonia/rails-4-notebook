@@ -1,0 +1,16 @@
+<div class="dark-matter">
+  <p id="notice"><%= notice %></p>
+
+  <h1><%= "#{t('title.details')}" %></h1>
+  
+  <p>
+    <strong><%= Kind.human_attribute_name("description") %>:</strong>
+    <%= @kind.description %>
+  </p>
+  <br>
+  <br>
+  <div class="actions">
+      <%= link_to t('buttons.edit'), edit_kind_path(@kind), class: 'button' %>&nbsp;&nbsp;&nbsp;
+      <%= link_to t('buttons.back'), kinds_path, class: 'button' %>
+  </div>
+</div>

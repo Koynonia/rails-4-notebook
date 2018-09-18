@@ -1,0 +1,21 @@
+<div class="dark-matter">
+  <p id="notice"><%= notice %></p>
+
+  <h1><%= "#{t('title.details')}" %></h1>
+
+  <p>
+    <strong><%= Phone.human_attribute_name("contact_id") %>:</strong>
+    <%= @phone.contact.name %>
+  </p>
+
+  <p>
+    <strong><%= Phone.human_attribute_name("phone") %>:</strong>
+    <%= @phone.phone %>
+  </p>
+  <br>
+  <br>
+  <div class="actions">
+      <%= link_to t('buttons.edit'), edit_phone_path(@phone), class: 'button' %>&nbsp;&nbsp;&nbsp;
+      <%= link_to t('buttons.back'), phones_path, class: 'button' %>
+  </div>
+</div>

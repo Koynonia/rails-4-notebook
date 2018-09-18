@@ -1,0 +1,5 @@
+'pt-BR':
+  message:
+    confirm: Tem certeza?
+    error: erro(s)
+    error_msg: não permitem este registro de ser salvo
