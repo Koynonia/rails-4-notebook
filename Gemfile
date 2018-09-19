@@ -19,6 +19,8 @@ gem 'kaminari'
 gem 'kaminari-i18n'
 # A simple, versatile notification library
 gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+# The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. http://getbootstrap.com
+gem 'rails-assets-bootstrap', source: 'https://rails-assets.org'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
