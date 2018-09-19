@@ -15,6 +15,8 @@ gem 'cocoon'
 gem 'kaminari'
 # i18n for kaminari
 gem 'kaminari-i18n'
+# Bundler-like DSL + rake tasks for Bower on Rails
+gem 'bower-rails', "~> 0.10.0"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
