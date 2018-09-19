@@ -1,5 +1,8 @@
 'pt-BR':
   message:
     confirm: Tem certeza?
+    create: O registro foi criado com sucesso.
+    destroy: O registro foi apagado com sucesso.
     error: erro(s)
     error_msg: não permitem este registro de ser salvo
+    update: O registro foi atualizado com sucesso.
