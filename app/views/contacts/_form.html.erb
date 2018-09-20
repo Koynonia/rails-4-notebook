@@ -1,7 +1,7 @@
 <%= form_for(@contact, html: {class: "dark-matter"}) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
-      <h2><%= "#{@contact.errors.count} #{t('message.error')} #{t('message.error_msg')}:" %></h2>
+      <h3><%= "#{@contact.errors.count} #{t('message.error')} #{t('message.error_msg')}:" %></h3>
 
       <ul>
       <% @contact.errors.full_messages.each do |message| %>

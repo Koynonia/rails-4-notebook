@@ -27,7 +27,8 @@
         contact_id: Contato
       phone:
         phone: Telefone
-        contact_id: Contato
+      phones:
+        phone: Telefone
       kind:
         kind: Tipo
         description: Descrição

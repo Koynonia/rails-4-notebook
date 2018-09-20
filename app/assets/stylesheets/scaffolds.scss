@@ -1,32 +1,5 @@
 /* #### Dark Matter #### */
-a {
-  color: #D3D3D3;
-  font-weight: bold;
-  text-decoration: none;
-}
-a:hover {
-  color: #FFCC02;
-}
-#notice {
-  color: #FFCC02;
-  text-align: right;
-}
-ul {
-  margin-top: 30px;
-  line-height: 1.5;
-  list-style-type: square;
-  list-style-position: inside;
-}
-table {
-  width: 100%;
-}
-td {
-  padding: 5px;
-}
-.page {
-  font-size: small;
-  text-align: right;
-}
+
 .dark-matter {
   margin-left: auto;
   margin-right: auto;
@@ -41,20 +14,24 @@ td {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
+
 .dark-matter h1 {
   padding: 0px 0px 10px 40px;
   display: block;
   border-bottom: 1px solid #444;
   margin: -10px -30px 30px -30px;
 }
+
 .dark-matter h1>span {
   display: block;
   font-size: 11px;
 }
+
 .dark-matter label {
   display: block;
   margin: 0px 0px 5px;
 }
+
 .dark-matter label>span {
   float: left;
   width: 20%;
@@ -63,6 +40,7 @@ td {
   margin-top: 10px;
   font-weight: bold;
 }
+
 .dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
   border: none;
   color: #525252;
@@ -80,6 +58,7 @@ td {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   background: #DFDFDF;
 }
+
 .dark-matter input[type="text"].phone-field{
   border: none;
   color: #525252;
@@ -97,6 +76,7 @@ td {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   background: #DFDFDF;
 }
+
 .dark-matter select {
   background: #DFDFDF url('down-arrow.png') no-repeat right;
   background: #DFDFDF url('down-arrow.png') no-repeat right;
@@ -110,11 +90,13 @@ td {
   color: #525252;
   line-height: 25px;
 }
+
 .dark-matter textarea{
   height:100px;
   padding: 5px 0px 0px 5px;
   width: 100%;
 }
+
 .dark-matter .button {
   background: #FFCC02;
   border: none;
@@ -130,10 +112,48 @@ td {
   -webkit-box-shadow:1px 1px 1px #3D3D3D;
   -moz-box-shadow:1px 1px 1px #3D3D3D;
 }
+
 .dark-matter .button:hover {
   color: #333;
   background-color: #EBEBEB;
 }
+
 .dark-matter div.field_with_errors {
   color: #FFCC02
+}
+
+.dark-matter a {
+  color: #D3D3D3;
+  font-weight: bold;
+  text-decoration: none;
+}
+.dark-matter a:hover {
+  color: #FFCC02;
+}
+
+.dark-matter h3 {
+  color: #FFCC02;
+}
+
+.dark-matter ul {
+  color: #FFCC02;
+  margin-top: 30px;
+  line-height: 1.5;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.dark-matter table {
+  width: 100%;
+}
+.dark-matter td {
+  padding: 5px;
+}
+.page {
+  font-size: small;
+  text-align: right;
+}
+
+#notice {
+  color: #FFCC02;
+  text-align: right;
 }
